@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  background-color: #fff;
+  color: #222;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #e63946;
+}
+
+.header p {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.home {
+  flex: 1;
+  padding: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+}
+
+.intro h2 {
+  font-size: 2.3rem;
+  color: #e63946;
+}
+
+.intro p {
+  color: #555;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  color: #e63946;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #333;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+  color: #777;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p,
+  .intro,
+  .intro p,
+  .products h2,
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}
